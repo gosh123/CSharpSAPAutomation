@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ITools.exe" version="1.0.0.2" publicKeyToken="694988b2e73b0d82" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ITools" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="ITools.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="DocumentFormat.OpenXml" version="2.5.5631.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ITools.exe" size="80344">
+      <assemblyIdentity name="ITools" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>OuD/N2stgxz5UnJxE5yt9VJQ9G4Ln/Ld2ooyGu4j0LY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SAPAutomation.dll" size="85504">
+      <assemblyIdentity name="SAPAutomation" version="1.1.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ivIRkr+vNcXdHT/mNuRrmKdpPN/S2BaO3zDoCe3Gefw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SAPGuiAutomationLib.dll" size="379904">
+      <assemblyIdentity name="SAPGuiAutomationLib" version="2.0.0.4" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>H4+S99pmHceAKjz9HOldr7DakoIjN15BhT/XcsUIfA4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="ITools.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=ASIAPACIFIC\yanzhou" issuerKeyHash="4becca9f8ba8387d994bd786638f820d9d599e51" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>6XqgEEDY0qZlkXaRyUMBZ2tT4uKdUZb4R5qvLVTJK5U=</DigestValue></Reference></SignedInfo><SignatureValue>LAv+1ss8h31h5Rqap0DAhphqfLmG3slnHJFx57t/m6s5ej1kf02Ufil1WaoJwW+nZo9X+7N/sYbyPX64JsNHcOyT8DKLo03yT+VbuzceG42uZ3K1Mb7DeGKhL7wcszrdRzfsesU7ulszP4bpAEIPC5+ObzxLlkX0hTAuzljsgi0=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>u3zmPB6xjX68f4wrUokFbTKaXsRRo1uMMpoMr4DyTtFVw5wehrInSH11KDXZWMjYc9ZWkMCFXD7kLH97TJKvAKl5Fbkj1p11zJJ2xPJEqLnx4xvyspUE3MU2DJMXUyCgfoN9ViTueU78rM7vgweH3b4IeKCpDLmPzfEHl7Sl1ks=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="952bc9542daf9a47f896519de2e2536b670143c991769165a6d2d84010a07ae9" Description="" Url=""><as:assemblyIdentity name="ITools.exe" version="1.0.0.2" publicKeyToken="694988b2e73b0d82" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ASIAPACIFIC\yanzhou</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>VGBWATvwIayMZ61zTNNryZdyone3SpXzu/qvs5A5Yvw=</DigestValue></Reference></SignedInfo><SignatureValue>XNJBKfw/jA4Wzq871Uk+Xz8u/maaQcpWX6TEnSLLIyuZuUK9XE0kuYrhjkrp+4ftPYUR/7hyIhMV55k34bahBpXKrKw5mcfpcmCJcVmFURltknrQVx7Y9OQmjRJv+/T0D+3O8qWOf/oChgyS/0Sc5nhfrrn3PFQJCwOWHoxhGBQ=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>u3zmPB6xjX68f4wrUokFbTKaXsRRo1uMMpoMr4DyTtFVw5wehrInSH11KDXZWMjYc9ZWkMCFXD7kLH97TJKvAKl5Fbkj1p11zJJ2xPJEqLnx4xvyspUE3MU2DJMXUyCgfoN9ViTueU78rM7vgweH3b4IeKCpDLmPzfEHl7Sl1ks=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB5TCCAU6gAwIBAgIQVCPJeMXAAYlCebPDJl9BdDANBgkqhkiG9w0BAQsFADAxMS8wLQYDVQQDHiYAQQBTAEkAQQBQAEEAQwBJAEYASQBDAFwAeQBhAG4AegBoAG8AdTAeFw0xNTA3MjkwNzI1MTdaFw0xNjA3MjgxMzI1MTdaMDExLzAtBgNVBAMeJgBBAFMASQBBAFAAQQBDAEkARgBJAEMAXAB5AGEAbgB6AGgAbwB1MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC7fOY8HrGNfrx/jCtSiQVtMppexFGjW4wymgyvgPJO0VXDnB6GsidIfXUoNdlYyNhz1laQwIVcPuQsf3tMkq8AqXkVuSPWnXXMknbE8kSoufHjG/KylQTcxTYMkxdTIKB+g31WJO55Tvyszu+DB4fdvgh4oKkMuY/N8QeXtKXWSwIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAFrn5aHLiS3uY70fRPe2zCPBp401uxktKYcS5Qpgwp69B5CLokSopzgjOuZgxZT7zZ/nwCASFsjthEZ9l1dQudHvIGp9LSvwaw0c7PLwk6XoSCGJv1RalWq0zh0xL05hrs42Nyn0XK62OlRlXmRSct9lyHXGqf9i+TuZXvgNvwbW</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
