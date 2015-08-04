@@ -1,0 +1,8 @@
+C:\Git\CSharpSAPAutomation\Driver\DriverTests\bin\Debug\DriverTests.dll
+C:\Git\CSharpSAPAutomation\Driver\DriverTests\bin\Debug\DriverTests.pdb
+C:\Git\CSharpSAPAutomation\Driver\DriverTests\bin\Debug\Driver.exe
+C:\Git\CSharpSAPAutomation\Driver\DriverTests\bin\Debug\SAPAutomation.dll
+C:\Git\CSharpSAPAutomation\Driver\DriverTests\bin\Debug\Driver.pdb
+C:\Git\CSharpSAPAutomation\Driver\DriverTests\obj\Debug\DriverTests.csprojResolveAssemblyReference.cache
+C:\Git\CSharpSAPAutomation\Driver\DriverTests\obj\Debug\DriverTests.dll
+C:\Git\CSharpSAPAutomation\Driver\DriverTests\obj\Debug\DriverTests.pdb
