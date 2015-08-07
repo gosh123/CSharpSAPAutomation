@@ -9,7 +9,6 @@ using SAPFEWSELib;
 using System.Data;
 using SAPAutomation.Framework.Attributes;
 using SAPAutomation.Data;
-
 namespace Driver
 {
     static class test001
@@ -65,8 +64,8 @@ namespace Driver
             mySAPBasis.MenuBarSelect("Back");
             string DocNo = myScript.CreateSalesOrder_Save();
             Console.WriteLine(DocNo);
-            Console.ReadLine();
-
+            Console.ReadLine();            
+            BusinessComponent.SD mySD =new BusinessComponent.SD();            
             //string aa = SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiStatusbar>("sbar").Text;            
             //var myTable = SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiUserArea>("usr").FindByName<GuiTabStrip>("TAXI_TABSTRIP_OVERVIEW").FindByName<GuiTab>("T\\01").FindByName<GuiScrollContainer>("SUBSCREEN_BODY:SAPMV45A:4414").FindByName<GuiSimpleContainer>("SUBSCREEN_TC:SAPMV45A:4902").FindByName<GuiGridView>("SAPMV45ATCTRL_U_ERF_GUTLAST");
             //var myTable = SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiTableControl>("SAPMV45ATCTRL_U_ERF_GUTLAST");
