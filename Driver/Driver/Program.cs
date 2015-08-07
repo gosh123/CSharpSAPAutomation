@@ -50,18 +50,22 @@ namespace Driver
             //Console.WriteLine(strCellValue);
             //Console.ReadLine();
 
-            //SAPBasis mySAPBasis = new SAPBasis();
-            //DemoScript myScript = new DemoScript();
-            //myScript.CreateSalesOrder_Initial();
-            //myScript.CreateSalesOrder_Overview();
-            //mySAPBasis.MenuBarSelect("Sales");
-            //myScript.CreateSalesOrder_Header_Sales();
-            //mySAPBasis.MenuBarSelect("Back");
-            //mySAPBasis.MenuBarSelect("Additional data B");
-            //myScript.CreateSalesOrder_Header_AdditionalB();
-            //mySAPBasis.MenuBarSelect("Back");
-            //mySAPBasis.MenuBarSelect("Texts");
-            
+            SAPBasis mySAPBasis = new SAPBasis();
+            VA01 myScript = new VA01();
+            myScript.CreateSalesOrder_Initial();
+            myScript.CreateSalesOrder_Overview();
+            mySAPBasis.MenuBarSelect("Sales");
+            myScript.CreateSalesOrder_Header_Sales();
+            mySAPBasis.MenuBarSelect("Back");
+            mySAPBasis.MenuBarSelect("Additional data B");
+            myScript.CreateSalesOrder_Header_AdditionalB();
+            mySAPBasis.MenuBarSelect("Back");
+            mySAPBasis.MenuBarSelect("Texts");
+            myScript.CreateSalesOrder_Header_Texts();
+            mySAPBasis.MenuBarSelect("Back");
+            string DocNo = myScript.CreateSalesOrder_Save();
+            Console.WriteLine(DocNo);
+            Console.ReadLine();
 
             //string aa = SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiStatusbar>("sbar").Text;            
             //var myTable = SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiUserArea>("usr").FindByName<GuiTabStrip>("TAXI_TABSTRIP_OVERVIEW").FindByName<GuiTab>("T\\01").FindByName<GuiScrollContainer>("SUBSCREEN_BODY:SAPMV45A:4414").FindByName<GuiSimpleContainer>("SUBSCREEN_TC:SAPMV45A:4902").FindByName<GuiGridView>("SAPMV45ATCTRL_U_ERF_GUTLAST");

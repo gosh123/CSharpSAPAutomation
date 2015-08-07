@@ -126,7 +126,7 @@ namespace Driver
             {
                 SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiUserArea>("usr").FindByName<GuiSimpleContainer>("SUBSCREEN_HEADER:SAPMV45A:4021").FindByName<GuiCTextField>("VBAK-ZZHPRECDT").Text = value;
             }
-        }        
+        }                        
     }
     public class SC_4002//va01 create sales order goto;header;sales
     {
@@ -164,6 +164,18 @@ namespace Driver
                 SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiTextField>("VBAK-ZZCUSTBASE").Text = value;
             }
         }
+        public string HeaderText
+        {
+            get
+            {
+                return null;
+            }
+            set
+            {
+                SAPTestHelper.Current.SAPGuiSession.FindById<GuiTextedit>("wnd[0]/usr/tabsTAXI_TABSTRIP_HEAD/tabpT\\09/ssubSUBSCREEN_BODY:SAPMV45A:4152/subSUBSCREEN_TEXT:SAPLV70T:2100/cntlSPLITTER_CONTAINER/shellcont/shellcont/shell/shellcont[1]/shell").Text = value;
+            }
+        }
     }    
+
     
 }

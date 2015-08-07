@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Driver;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Text.RegularExpressions;
 namespace Driver.Tests
 {
     [TestClass()]
@@ -40,10 +41,33 @@ namespace Driver.Tests
         public void TreeOperation() //goto;header;texts tree Customer Comment 
         {
             var mySAPBasis = new SAPBasis();
-            mySAPBasis.SetCurrentSession();
+           
             mySAPBasis.TreeSelect("wnd[0]/usr/tabsTAXI_TABSTRIP_HEAD/tabpT\\09/ssubSUBSCREEN_BODY:SAPMV45A:4152/subSUBSCREEN_TEXT:SAPLV70T:2100/cntlSPLITTER_CONTAINER/shellcont/shellcont/shell/shellcont[0]/shell", "Z157", "Column1");
+            
+
             //SAPTestHelper.Current.SAPGuiSession.FindById<GuiTree>("wnd[0]/usr/tabsTAXI_TABSTRIP_HEAD/tabpT\\09/ssubSUBSCREEN_BODY:SAPMV45A:4152/subSUBSCREEN_TEXT:SAPLV70T:2100/cntlSPLITTER_CONTAINER/shellcont/shellcont/shell/shellcont[0]/shell").SelectItem("Z157", "Column1");
 
+        }
+        [TestMethod()]
+        public void StatusBarGetDocNo()
+        {
+           
+            var mySAPBasis = new SAPBasis();
+            mySAPBasis.SetCurrentSession();
+            string DocNo=mySAPBasis.statusBarGetDocNo();
+            //string status = "Credit request 7514158818 has been saved";
+            //Regex status = new Regex(status);
+            Regex re = new Regex("[0-9]");
+            re.Match(DocNo);
+            //string DocNo=re.Replace(status, "");
+
+            //Console.Write(status);
+            //Console.Read();
+            Assert.AreNotEqual(DocNo, "");
+            //if (re.Match(DocNo))
+            //{
+            
+            //}
         }
     }
 }

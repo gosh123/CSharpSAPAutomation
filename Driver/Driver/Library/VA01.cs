@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Driver
 {
-    public class DemoScript
+    public class VA01
     {
         public void CreateSalesOrder_Initial()
         {
@@ -59,6 +59,22 @@ namespace Driver
             var myScreen = new SC_4002();
             myScreen.ConfigCheck = "X";
             myScreen.CustBaseNo = "L80014115";
+        }
+        public void CreateSalesOrder_Header_Texts()
+        {
+            var myScreen = new SC_4002();
+            var mySAPBasis = new SAPBasis();
+            
+            mySAPBasis.TreeActive("wnd[0]/usr/tabsTAXI_TABSTRIP_HEAD/tabpT\\09/ssubSUBSCREEN_BODY:SAPMV45A:4152/subSUBSCREEN_TEXT:SAPLV70T:2100/cntlSPLITTER_CONTAINER/shellcont/shellcont/shell/shellcont[0]/shell", "Z157", "Column1");
+            
+            mySAPBasis.TreeSelect("wnd[0]/usr/tabsTAXI_TABSTRIP_HEAD/tabpT\\09/ssubSUBSCREEN_BODY:SAPMV45A:4152/subSUBSCREEN_TEXT:SAPLV70T:2100/cntlSPLITTER_CONTAINER/shellcont/shellcont/shell/shellcont[0]/shell", "Z200", "Column2");
+            
+            myScreen.HeaderText = "Comment123123";            
+        }
+        public string CreateSalesOrder_Save()
+        {
+            var mySAPBasis = new SAPBasis();
+            return mySAPBasis.Save();
         }
 
     }   
