@@ -46,10 +46,14 @@ namespace Driver
                 intRepeat++;
             }            
         }
-        public void MenuBarSelect()
+        public void MenuBarSelect(string strMenuName)
         {
-            //SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiMenubar>("mbar").
+            //SAPTestHelper.Current.SAPGuiSession.FindById<GuiMenu>("wnd[0]/mbar/" + strindex).Select();
+            SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiMenu>(strMenuName).Select(); 
         }
-
+        public void TreeSelect(string strTreeID,string strNodeKey, string strItemName)
+        {
+            SAPTestHelper.Current.SAPGuiSession.FindById<GuiTree>(strTreeID).SelectItem(strNodeKey, strItemName);
+        }
     }
 }
