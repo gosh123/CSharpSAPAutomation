@@ -49,6 +49,7 @@
     <Compile Include="Library\VA01.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reporter\Reporter.cs" />
     <Compile Include="SAPBasis.cs" />
     <Compile Include="Reprository\SD.cs" />
   </ItemGroup>
