@@ -16,7 +16,7 @@ namespace Driver.Reporter
     {
         [XmlElement]
         public Summary Summary;
-        [XmlElement]
+        [XmlElement("Detail")]
         public Details Details;
     }
     public class Summary
@@ -40,7 +40,9 @@ namespace Driver.Reporter
         [XmlElement]
         public string CaseStatus;
         [XmlElement]
-        public List<InputDatas> InputDatas;
+        public InputDatas InputDatas;
+        [XmlElement]
+        public OutputDatas OutputDatas;
 
     }
     public class InputDatas
@@ -49,6 +51,18 @@ namespace Driver.Reporter
         public List<InputData> InputData; 
     }
     public class InputData
+    {
+        [XmlElement]
+        public string FieldName;
+        [XmlElement]
+        public string FieldValue;
+    }
+    public class OutputDatas
+    {
+        [XmlElement]
+        public List<OutputData> OutputData;
+    }
+    public class OutputData
     {
         [XmlElement]
         public string FieldName;
@@ -73,6 +87,17 @@ namespace Driver.Reporter
             ReportRoot xmldata = (ReportRoot)obj;
             reader.Close();
             return xmldata;
+        }
+    }
+    public class Reporter
+    {
+        public void initialize(string TestName)
+        {
+            ReportRoot Report = new ReportRoot();
+            var Summary = new Summary();
+            Summary.TestName = TestName;
+            Report.Summary = Summary;
+            ReportSerialization.ReportSerialize(Report, TestName);
         }
     }
     //    public void ReporterInitialize()
