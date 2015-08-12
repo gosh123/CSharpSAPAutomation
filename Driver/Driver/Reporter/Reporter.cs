@@ -78,6 +78,10 @@ namespace Driver.Reporter
             {
                 serializer.Serialize(writer,rr);
             }
+            //add xml header <?xml-stylesheet type='text/xsl' href='../NewReportTemplate2.xsl'?>
+            string[] content = File.ReadAllText(xmlFilePath).Split(new char[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+            content[1] = "<?xml-stylesheet type='text/xsl' href='../NewReportTemplate2.xsl'?>" + "\r\n<ReportRoot>";
+            File.WriteAllText(xmlFilePath, string.Join("\r\n", content));
         }
         public ReportRoot ReportDeserialization(string xmlFilePath)
         {
@@ -91,14 +95,48 @@ namespace Driver.Reporter
     }
     public class Reporter
     {
+        public string TestOutputPath;
         public void initialize(string TestName)
         {
             ReportRoot Report = new ReportRoot();
+            ReportSerialization RS = new ReportSerialization();
             var Summary = new Summary();
             Summary.TestName = TestName;
             Report.Summary = Summary;
-            ReportSerialization.ReportSerialize(Report, TestName);
+            string TestFolderName = @"C:\Temp\" + TestName;
+            TestOutputPath = @"C:\Temp\" + TestName+"\\output.xml";
+            if (!Directory.Exists(TestFolderName))
+            {
+                Directory.CreateDirectory(TestFolderName);                
+            }
+            RS.ReportSerialize(Report, TestOutputPath);
+            
+            //return TestOutputPath;
         }
+        public void AddStep(string CaseName,string CaseStatus,string StepName,int Number, List<InputData> inputdata, List<OutputData> outputdata)
+        {            
+            var reporter = new ReportRoot();
+            var reporterDes = new ReportSerialization();
+            ReportRoot xmldata = reporterDes.ReportDeserialization(TestOutputPath);
+            //add test step info
+            reporter = xmldata;
+            var inputdatas = new InputDatas();            
+            var outputdatas = new OutputDatas();            
+            inputdatas.InputData = inputdata;
+            outputdatas.OutputData = outputdata;
+            List<TestStep> teststep = new List<TestStep>();
+            if (reporter.Details != null)
+            {
+                teststep = reporter.Details.TestStep;
+            }
+            teststep.Add(new TestStep { CaseName = CaseName, CaseStatus = CaseStatus, StepName = StepName, Number = Number, InputDatas = inputdatas, OutputDatas = outputdatas });
+            Details details = new Details();
+            details.TestStep = teststep;
+            reporter.Details = details;            
+            //Serialization new report
+            var ReporterSerialization = new ReportSerialization();
+            ReporterSerialization.ReportSerialize(reporter, TestOutputPath);
+        }        
     }
     //    public void ReporterInitialize()
     //    {

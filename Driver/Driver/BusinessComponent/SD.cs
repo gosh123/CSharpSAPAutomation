@@ -8,6 +8,8 @@ namespace Driver.BusinessComponent
 {
     public class SD
     {
+        public string DocNo;
+
         public void VA01_CreateSalesOrder(string strFlowName)
         {
             VA01 va01 = new VA01();
@@ -31,7 +33,7 @@ namespace Driver.BusinessComponent
                     va01.CreateSalesOrder_Header_Texts();
                     mySAPBasis.MenuBarSelect("Back");break;
                 case "CreateSO_Save":
-                   string DocNo=va01.CreateSalesOrder_Save();break;
+                   DocNo=va01.CreateSalesOrder_Save();break;
 
             }            
         }

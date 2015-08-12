@@ -11,15 +11,14 @@ namespace Driver
         public void CreateSalesOrder_Initial()
         {
             var myScreen = new SC_101();
-            var mySAPBasis = new SAPBasis();
+            var mySAPBasis = new SAPBasis();            
             // Create Sales Doc Initial
             mySAPBasis.StartTransction("VA01");           
             myScreen.OrderType = "ZCR";
             myScreen.SalesOrg = "L8";
             myScreen.DistributionChannel = "ZZ";
             myScreen.Division = "ZZ";
-            mySAPBasis.PressEnter();   
-            
+            mySAPBasis.PressEnter();                           
             
         }
         public void CreateSalesOrder_Overview()

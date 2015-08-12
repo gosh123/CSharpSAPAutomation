@@ -92,5 +92,26 @@ namespace Driver.Tests
             var ReporterSerialization = new Reporter.ReportSerialization();
             ReporterSerialization.ReportSerialize(reporter, "c:\\temp\\bbb.xml");
         }
+        [TestMethod()]
+        public void ReportTest_Initialize()
+        {
+            //initialize a report 
+            var reporter = new Reporter.Reporter();
+            var report = new Reporter.ReportRoot();
+            var RS = new Reporter.ReportSerialization();
+            reporter.initialize("Test_Name_1231231234");//don't use space;                        
+
+            //add details
+                //deserializae xml file
+            List<Reporter.InputData> inputdata = new List<Reporter.InputData>();
+            List<Reporter.OutputData> outputdata = new List<Reporter.OutputData>();
+            inputdata.Add(new Reporter.InputData { FieldName="OrderType",FieldValue="ZOR"});
+            outputdata.Add (new Reporter.OutputData{FieldName = "DocNo",FieldValue =  "11223344"});
+            reporter.AddStep("CaseName001", "Pass", "StepName", 1, inputdata, outputdata);
+            reporter.AddStep("CaseName002", "Pass", "StepName", 2, inputdata, outputdata);
+            //add details
+            
+        }
+
     }
 }
