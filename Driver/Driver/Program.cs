@@ -51,9 +51,12 @@ namespace Driver
 
             //initialize report
             Reporter.Reporter reporter = new Reporter.Reporter();
-            List<Reporter.InputData> inputdata = new List<Reporter.InputData>();
-            List<Reporter.OutputData> outputdata = new List<Reporter.OutputData>();
-            reporter.initialize("Test_VA01");            
+            //List<Reporter.InputData> inputdata = new List<Reporter.InputData>();
+            //List<Reporter.OutputData> outputdata = new List<Reporter.OutputData>();
+            reporter.initialize("Test_VA01");
+            
+
+            //initialize Test 
             SAPBasis mySAPBasis = new SAPBasis();
             VA01 myScript = new VA01();
             //myScript.CreateSalesOrder_Initial();
@@ -71,28 +74,30 @@ namespace Driver
             //Console.WriteLine(DocNo);
             //Console.ReadLine();            
             BusinessComponent.SD mySD =new BusinessComponent.SD();
+            reporter.AddStep("VA01_CreateSalesOrder", "Pass", "VA01_CreateSalesOrder", 1);
             mySD.VA01_CreateSalesOrder("CreateSO_Initial");
-            inputdata.Add(new Reporter.InputData { FieldName = "OrderType", FieldValue = "ZCR" });
-            inputdata.Add(new Reporter.InputData { FieldName = "SalesOrg", FieldValue = "L8" });
-            inputdata.Add(new Reporter.InputData { FieldName = "DistributionChannel", FieldValue = "ZZ" });
-            inputdata.Add(new Reporter.InputData { FieldName = "Division", FieldValue = "ZZ" });
+            //inputdata.Add(new Reporter.InputData { FieldName = "OrderType", FieldValue = "ZCR" });
+            //inputdata.Add(new Reporter.InputData { FieldName = "SalesOrg", FieldValue = "L8" });
+            //inputdata.Add(new Reporter.InputData { FieldName = "DistributionChannel", FieldValue = "ZZ" });
+            //inputdata.Add(new Reporter.InputData { FieldName = "Division", FieldValue = "ZZ" });
             mySD.VA01_CreateSalesOrder("CreateSO_Overview");
-            inputdata.Add(new Reporter.InputData { FieldName = "ShipToParty", FieldValue = "110601974" });
-            inputdata.Add(new Reporter.InputData { FieldName = "SoldToParty", FieldValue = "110601974" });
-            inputdata.Add(new Reporter.InputData { FieldName = "PONo", FieldValue = "test201508041620" });
-            inputdata.Add(new Reporter.InputData { FieldName = "PODate", FieldValue = "08/04/2015" });
-            inputdata.Add(new Reporter.InputData { FieldName = "HPReceiveDate", FieldValue = "08/04/2015" });
+            //inputdata.Add(new Reporter.InputData { FieldName = "ShipToParty", FieldValue = "110601974" });
+            //inputdata.Add(new Reporter.InputData { FieldName = "SoldToParty", FieldValue = "110601974" });
+            //inputdata.Add(new Reporter.InputData { FieldName = "PONo", FieldValue = "test201508041620" });
+            //inputdata.Add(new Reporter.InputData { FieldName = "PODate", FieldValue = "08/04/2015" });
+            //inputdata.Add(new Reporter.InputData { FieldName = "HPReceiveDate", FieldValue = "08/04/2015" });
             mySD.VA01_CreateSalesOrder("Create_Header_Sales");
-            inputdata.Add(new Reporter.InputData { FieldName = "OrderReason", FieldValue = "105" });
+            //inputdata.Add(new Reporter.InputData { FieldName = "OrderReason", FieldValue = "105" });
             mySD.VA01_CreateSalesOrder("CreateSO_Header_AdditionaldataB");
-            inputdata.Add(new Reporter.InputData { FieldName = "ConfigCheck", FieldValue = "X" });
-            inputdata.Add(new Reporter.InputData { FieldName = "CustBaseNo", FieldValue = "L80014115" });
+            //inputdata.Add(new Reporter.InputData { FieldName = "ConfigCheck", FieldValue = "X" });
+            //inputdata.Add(new Reporter.InputData { FieldName = "CustBaseNo", FieldValue = "L80014115" });
             mySD.VA01_CreateSalesOrder("CreateSO_Header_Texts");
-            inputdata.Add(new Reporter.InputData { FieldName = "HeaderText", FieldValue = "Comment123123" });
+            //inputdata.Add(new Reporter.InputData { FieldName = "HeaderText", FieldValue = "Comment123123" });
             mySD.VA01_CreateSalesOrder("CreateSO_Save");
             string DocNo = mySD.DocNo;
-            outputdata.Add(new Reporter.OutputData {FieldName="SalesDocNo",FieldValue=DocNo});            
-            reporter.AddStep("VA01_CreateSalesOrder", "Pass","VA01_CreateSalesOrder",1,inputdata,outputdata);                        
+            //outputdata.Add(new Reporter.OutputData {FieldName="SalesDocNo",FieldValue=DocNo});
+            reporter.updateoutputdata("SalesDocNo", DocNo);
+            reporter.close();
             //string aa = SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiStatusbar>("sbar").Text;            
             //var myTable = SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiUserArea>("usr").FindByName<GuiTabStrip>("TAXI_TABSTRIP_OVERVIEW").FindByName<GuiTab>("T\\01").FindByName<GuiScrollContainer>("SUBSCREEN_BODY:SAPMV45A:4414").FindByName<GuiSimpleContainer>("SUBSCREEN_TC:SAPMV45A:4902").FindByName<GuiGridView>("SAPMV45ATCTRL_U_ERF_GUTLAST");
             //var myTable = SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiTableControl>("SAPMV45ATCTRL_U_ERF_GUTLAST");

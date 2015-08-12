@@ -20,6 +20,8 @@ namespace Driver
             }
             set
             {
+                var reporter = new Reporter.Reporter();
+                reporter.updateinputdata("OrderType", value);
                 SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiUserArea>("usr").FindByName<GuiCTextField>("VBAK-AUART").Text = value;
                //var myOrderType = SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiUserArea>("usr").FindByName<GuiCTextField>("VBAK-AUART");
                 //var myOrderType = SAPTestHelper.Current.GetElementById<GuiCTextField>("wnd[0]/usr/VBAK-AUART");
@@ -36,6 +38,8 @@ namespace Driver
             }
             set
             {
+                var reporter = new Reporter.Reporter();
+                reporter.updateinputdata("SalesOrg", value);
                 SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiUserArea>("usr").FindByName<GuiCTextField>("VBAK-VKORG").Text = value;
             }
         }
@@ -47,6 +51,8 @@ namespace Driver
             }
             set
             {
+                var reporter = new Reporter.Reporter();
+                reporter.updateinputdata("DistributionChannel", value);
                 SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiUserArea>("usr").FindByName<GuiCTextField>("VBAK-VTWEG").Text = value;
             }
         }
@@ -58,6 +64,8 @@ namespace Driver
             }
             set
             {
+                var reporter = new Reporter.Reporter();
+                reporter.updateinputdata("Division", value);
                 SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiUserArea>("usr").FindByName<GuiCTextField>("VBAK-SPART").Text = value;
             }
         }
@@ -80,6 +88,8 @@ namespace Driver
             }
             set
             {
+                var reporter = new Reporter.Reporter();
+                reporter.updateinputdata("SoldToParty", value);
                 SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiUserArea>("usr").FindByName<GuiSimpleContainer>("SUBSCREEN_HEADER:SAPMV45A:4021").FindByName<GuiSimpleContainer>("PART-SUB:SAPMV45A:4701").FindByName<GuiCTextField>("KUAGV-KUNNR").Text=value;
             }
         }
@@ -91,6 +101,8 @@ namespace Driver
             }
             set
             {
+                var reporter = new Reporter.Reporter();
+                reporter.updateinputdata("ShipToParty", value);
                 SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiUserArea>("usr").FindByName<GuiSimpleContainer>("SUBSCREEN_HEADER:SAPMV45A:4021").FindByName<GuiSimpleContainer>("PART-SUB:SAPMV45A:4701").FindByName<GuiCTextField>("KUWEV-KUNNR").Text = value;
             }
         }
@@ -102,6 +114,8 @@ namespace Driver
             }
             set
             {
+                var reporter = new Reporter.Reporter();
+                reporter.updateinputdata("PONo", value);
                 SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiUserArea>("usr").FindByName<GuiSimpleContainer>("SUBSCREEN_HEADER:SAPMV45A:4021").FindByName<GuiTextField>("VBKD-BSTKD").Text = value;
             }
         }
@@ -113,6 +127,8 @@ namespace Driver
             }
             set
             {
+                var reporter = new Reporter.Reporter();
+                reporter.updateinputdata("PODate", value);
                 SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiUserArea>("usr").FindByName<GuiSimpleContainer>("SUBSCREEN_HEADER:SAPMV45A:4021").FindByName<GuiCTextField>("VBKD-BSTDK").Text = value;
             }
         }
@@ -124,6 +140,8 @@ namespace Driver
             }
             set
             {
+                var reporter = new Reporter.Reporter();
+                reporter.updateinputdata("HPReceiveDate", value);
                 SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiUserArea>("usr").FindByName<GuiSimpleContainer>("SUBSCREEN_HEADER:SAPMV45A:4021").FindByName<GuiCTextField>("VBAK-ZZHPRECDT").Text = value;
             }
         }                        
@@ -138,6 +156,8 @@ namespace Driver
             }
             set
             {
+                var reporter = new Reporter.Reporter();
+                reporter.updateinputdata("OrderReason", value);
                 SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiComboBox>("VBAK-AUGRU").Key = value;
             }
         }
@@ -149,6 +169,8 @@ namespace Driver
             }
             set
             {
+                var reporter = new Reporter.Reporter();
+                reporter.updateinputdata("ConfigCheck", value);
                 SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiCTextField>("VBAK-ZZCNFGCHK").Text = value;
             }
         
@@ -161,6 +183,8 @@ namespace Driver
             }
             set
             {
+                var reporter = new Reporter.Reporter();
+                reporter.updateinputdata("CustBaseNo", value);
                 SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiTextField>("VBAK-ZZCUSTBASE").Text = value;
             }
         }
@@ -172,6 +196,8 @@ namespace Driver
             }
             set
             {
+                var reporter = new Reporter.Reporter();
+                reporter.updateinputdata("HeaderText", value);
                 SAPTestHelper.Current.SAPGuiSession.FindById<GuiTextedit>("wnd[0]/usr/tabsTAXI_TABSTRIP_HEAD/tabpT\\09/ssubSUBSCREEN_BODY:SAPMV45A:4152/subSUBSCREEN_TEXT:SAPLV70T:2100/cntlSPLITTER_CONTAINER/shellcont/shellcont/shell/shellcont[1]/shell").Text = value;
             }
         }
