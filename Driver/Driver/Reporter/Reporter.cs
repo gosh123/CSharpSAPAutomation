@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Xml.Serialization;
 using System.Xml;
 using System.IO;
-
+using System.Collections.ObjectModel;
 
 namespace Driver.Reporter
 {
@@ -16,6 +16,7 @@ namespace Driver.Reporter
     {
         [XmlElement]
         public Summary Summary;
+
         [XmlElement("Detail")]
         public Details Details;
     }
@@ -49,6 +50,7 @@ namespace Driver.Reporter
     {
         [XmlElement]
         public List<InputData> InputData; 
+
     }
     public class InputData
     {
@@ -99,7 +101,7 @@ namespace Driver.Reporter
         public void initialize(string TestName)
         {
             string TestOutputPath;
-            ReportRoot Report = new ReportRoot();
+            ReportRoot Report = new ReportRoot();            
             ReportSerialization RS = new ReportSerialization();
             var Summary = new Summary();
             Summary.TestName = TestName;

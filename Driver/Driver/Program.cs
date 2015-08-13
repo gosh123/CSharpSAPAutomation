@@ -53,7 +53,7 @@ namespace Driver
             Reporter.Reporter reporter = new Reporter.Reporter();
             //List<Reporter.InputData> inputdata = new List<Reporter.InputData>();
             //List<Reporter.OutputData> outputdata = new List<Reporter.OutputData>();
-            reporter.initialize("Test_VA01");
+            reporter.initialize("VA01Test");
             
 
             //initialize Test 

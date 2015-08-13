@@ -6,3 +6,4 @@ C:\Git\CSharpSAPAutomation\Driver\Driver\obj\Debug\Interop.SAPFEWSELib.dll
 C:\Git\CSharpSAPAutomation\Driver\Driver\obj\Debug\Driver.csproj.ResolveComReference.cache
 C:\Git\CSharpSAPAutomation\Driver\Driver\obj\Debug\Driver.exe
 C:\Git\CSharpSAPAutomation\Driver\Driver\obj\Debug\Driver.pdb
+C:\Git\CSharpSAPAutomation\Driver\Driver\bin\Debug\SAPAutomation.dll
