@@ -11,6 +11,7 @@ namespace Driver
         public void CreateSalesOrder_Initial()
         {
             var myScreen = new SC_101();
+            myScreen.DataBinding();
             var mySAPBasis = new SAPBasis();            
             // Create Sales Doc Initial
             mySAPBasis.StartTransction("VA01");           

@@ -1,0 +1,572 @@
+<?xml version="1.0"?>
+<ArrayOfScreenData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ScreenData>
+    <SystemName>U26</SystemName>
+    <Transaction>VA01</Transaction>
+    <ScreenNumber>4001</ScreenNumber>
+    <Program>SAPMV45A</Program>
+    <ActiveWindow>Create Credit request: Overview</ActiveWindow>
+    <SAPGuiElements>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]</Id>
+        <Name>wnd[0]</Name>
+        <Type>GuiMainWindow</Type>
+        <Action>InvokeMethod</Action>
+        <ActionName>ResizeWorkingPane</ActionName>
+        <ActionValues>
+          <anyType xsi:type="xsd:int">114</anyType>
+          <anyType xsi:type="xsd:int">24</anyType>
+          <anyType xsi:type="xsd:boolean">false</anyType>
+        </ActionValues>
+      </SAPGuiElement>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]</Id>
+        <Name>wnd[0]</Name>
+        <Type>GuiMainWindow</Type>
+        <Action>InvokeMethod</Action>
+        <ActionName>SendVKey</ActionName>
+        <ActionValues>
+          <anyType xsi:type="xsd:int">0</anyType>
+        </ActionValues>
+      </SAPGuiElement>
+    </SAPGuiElements>
+  </ScreenData>
+  <ScreenData>
+    <SystemName>U26</SystemName>
+    <Transaction>VA01</Transaction>
+    <ScreenNumber>101</ScreenNumber>
+    <Program>SAPMV45A</Program>
+    <ActiveWindow>Create Sales Order: Initial Screen</ActiveWindow>
+    <SAPGuiElements>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/usr/ctxtVBAK-AUART</Id>
+        <Name>VBAK-AUART</Name>
+        <Type>GuiCTextField</Type>
+        <Action>SetProperty</Action>
+        <ActionName>Text</ActionName>
+        <ActionValues>
+          <anyType xsi:type="xsd:string">ZCR</anyType>
+        </ActionValues>
+      </SAPGuiElement>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/usr/ctxtVBAK-VKORG</Id>
+        <Name>VBAK-VKORG</Name>
+        <Type>GuiCTextField</Type>
+        <Action>SetProperty</Action>
+        <ActionName>Text</ActionName>
+        <ActionValues>
+          <anyType xsi:type="xsd:string">L8</anyType>
+        </ActionValues>
+      </SAPGuiElement>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/usr/ctxtVBAK-VTWEG</Id>
+        <Name>VBAK-VTWEG</Name>
+        <Type>GuiCTextField</Type>
+        <Action>SetProperty</Action>
+        <ActionName>Text</ActionName>
+        <ActionValues>
+          <anyType xsi:type="xsd:string">ZZ</anyType>
+        </ActionValues>
+      </SAPGuiElement>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/usr/ctxtVBAK-SPART</Id>
+        <Name>VBAK-SPART</Name>
+        <Type>GuiCTextField</Type>
+        <Action>SetProperty</Action>
+        <ActionName>Text</ActionName>
+        <ActionValues>
+          <anyType xsi:type="xsd:string">ZZ</anyType>
+        </ActionValues>
+      </SAPGuiElement>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]</Id>
+        <Name>wnd[0]</Name>
+        <Type>GuiMainWindow</Type>
+        <Action>InvokeMethod</Action>
+        <ActionName>SendVKey</ActionName>
+        <ActionValues>
+          <anyType xsi:type="xsd:int">0</anyType>
+        </ActionValues>
+      </SAPGuiElement>
+    </SAPGuiElements>
+  </ScreenData>
+  <ScreenData>
+    <SystemName>U26</SystemName>
+    <Transaction>VA01</Transaction>
+    <ScreenNumber>4001</ScreenNumber>
+    <Program>SAPMV45A</Program>
+    <ActiveWindow>Create Credit request: Overview</ActiveWindow>
+    <SAPGuiElements>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/usr/subSUBSCREEN_HEADER:SAPMV45A:4021/ctxtVBKD-BSTDK</Id>
+        <Name>VBKD-BSTDK</Name>
+        <Type>GuiCTextField</Type>
+        <Action>SetProperty</Action>
+        <ActionName>Text</ActionName>
+        <ActionValues>
+          <anyType xsi:type="xsd:string">08/04/2015</anyType>
+        </ActionValues>
+      </SAPGuiElement>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/usr/subSUBSCREEN_HEADER:SAPMV45A:4021/ctxtVBAK-ZZHPRECDT</Id>
+        <Name>VBAK-ZZHPRECDT</Name>
+        <Type>GuiCTextField</Type>
+        <Action>SetProperty</Action>
+        <ActionName>Text</ActionName>
+        <ActionValues>
+          <anyType xsi:type="xsd:string">08/04/2015</anyType>
+        </ActionValues>
+      </SAPGuiElement>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/usr/subSUBSCREEN_HEADER:SAPMV45A:4021/txtVBKD-BSTKD</Id>
+        <Name>VBKD-BSTKD</Name>
+        <Type>GuiTextField</Type>
+        <Action>SetProperty</Action>
+        <ActionName>Text</ActionName>
+        <ActionValues>
+          <anyType xsi:type="xsd:string">test201508041620</anyType>
+        </ActionValues>
+      </SAPGuiElement>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/usr/subSUBSCREEN_HEADER:SAPMV45A:4021/subPART-SUB:SAPMV45A:4701/ctxtKUAGV-KUNNR</Id>
+        <Name>KUAGV-KUNNR</Name>
+        <Type>GuiCTextField</Type>
+        <Action>SetProperty</Action>
+        <ActionName>Text</ActionName>
+        <ActionValues>
+          <anyType xsi:type="xsd:string">110601974</anyType>
+        </ActionValues>
+      </SAPGuiElement>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/usr/subSUBSCREEN_HEADER:SAPMV45A:4021/subPART-SUB:SAPMV45A:4701/ctxtKUWEV-KUNNR</Id>
+        <Name>KUWEV-KUNNR</Name>
+        <Type>GuiCTextField</Type>
+        <Action>SetProperty</Action>
+        <ActionName>Text</ActionName>
+        <ActionValues>
+          <anyType xsi:type="xsd:string">110601974</anyType>
+        </ActionValues>
+      </SAPGuiElement>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/usr/tabsTAXI_TABSTRIP_OVERVIEW/tabpT\01/ssubSUBSCREEN_BODY:SAPMV45A:4414/subSUBSCREEN_TC:SAPMV45A:4902/tblSAPMV45ATCTRL_U_ERF_GUTLAST/ctxtRV45A-MABNR[1,0]</Id>
+        <Name>RV45A-MABNR</Name>
+        <Type>GuiCTextField</Type>
+        <Action>SetProperty</Action>
+        <ActionName>Text</ActionName>
+        <ActionValues>
+          <anyType xsi:type="xsd:string">627808-B21</anyType>
+        </ActionValues>
+      </SAPGuiElement>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/usr/tabsTAXI_TABSTRIP_OVERVIEW/tabpT\01/ssubSUBSCREEN_BODY:SAPMV45A:4414/subSUBSCREEN_TC:SAPMV45A:4902/tblSAPMV45ATCTRL_U_ERF_GUTLAST/txtVBAP-ZMENG[4,0]</Id>
+        <Name>VBAP-ZMENG</Name>
+        <Type>GuiTextField</Type>
+        <Action>SetProperty</Action>
+        <ActionName>Text</ActionName>
+        <ActionValues>
+          <anyType xsi:type="xsd:string">1</anyType>
+        </ActionValues>
+      </SAPGuiElement>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]</Id>
+        <Name>wnd[0]</Name>
+        <Type>GuiMainWindow</Type>
+        <Action>InvokeMethod</Action>
+        <ActionName>SendVKey</ActionName>
+        <ActionValues>
+          <anyType xsi:type="xsd:int">0</anyType>
+        </ActionValues>
+      </SAPGuiElement>
+    </SAPGuiElements>
+  </ScreenData>
+  <ScreenData>
+    <SystemName>U26</SystemName>
+    <Transaction>VA01</Transaction>
+    <ScreenNumber>4001</ScreenNumber>
+    <Program>SAPMV45A</Program>
+    <ActiveWindow>Create Credit request: Overview</ActiveWindow>
+    <SAPGuiElements>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]</Id>
+        <Name>wnd[0]</Name>
+        <Type>GuiMainWindow</Type>
+        <Action>InvokeMethod</Action>
+        <ActionName>SendVKey</ActionName>
+        <ActionValues>
+          <anyType xsi:type="xsd:int">0</anyType>
+        </ActionValues>
+      </SAPGuiElement>
+    </SAPGuiElements>
+  </ScreenData>
+  <ScreenData>
+    <SystemName>U26</SystemName>
+    <Transaction>VA01</Transaction>
+    <ScreenNumber>4001</ScreenNumber>
+    <Program>SAPMV45A</Program>
+    <ActiveWindow>Create Credit request: Overview</ActiveWindow>
+    <SAPGuiElements>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/mbar/menu[2]/menu[1]/menu[0]</Id>
+        <Name>Sales</Name>
+        <Type>GuiMenu</Type>
+        <Action>InvokeMethod</Action>
+        <ActionName>Select</ActionName>
+      </SAPGuiElement>
+    </SAPGuiElements>
+  </ScreenData>
+  <ScreenData>
+    <SystemName>U26</SystemName>
+    <Transaction>VA01</Transaction>
+    <ScreenNumber>4002</ScreenNumber>
+    <Program>SAPMV45A</Program>
+    <ActiveWindow>Create Credit request: Header Data</ActiveWindow>
+    <SAPGuiElements>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/usr/tabsTAXI_TABSTRIP_HEAD/tabpT\01/ssubSUBSCREEN_BODY:SAPMV45A:4301/cmbVBAK-AUGRU</Id>
+        <Name>VBAK-AUGRU</Name>
+        <Type>GuiComboBox</Type>
+        <Action>SetProperty</Action>
+        <ActionName>Key</ActionName>
+        <ActionValues>
+          <anyType xsi:type="xsd:string">105</anyType>
+        </ActionValues>
+      </SAPGuiElement>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]</Id>
+        <Name>wnd[0]</Name>
+        <Type>GuiMainWindow</Type>
+        <Action>InvokeMethod</Action>
+        <ActionName>SendVKey</ActionName>
+        <ActionValues>
+          <anyType xsi:type="xsd:int">0</anyType>
+        </ActionValues>
+      </SAPGuiElement>
+    </SAPGuiElements>
+  </ScreenData>
+  <ScreenData>
+    <SystemName>U26</SystemName>
+    <Transaction>VA01</Transaction>
+    <ScreenNumber>4002</ScreenNumber>
+    <Program>SAPMV45A</Program>
+    <ActiveWindow>Create Credit request: Header Data</ActiveWindow>
+    <SAPGuiElements>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/mbar/menu[2]/menu[4]</Id>
+        <Name>Back</Name>
+        <Type>GuiMenu</Type>
+        <Action>InvokeMethod</Action>
+        <ActionName>Select</ActionName>
+      </SAPGuiElement>
+    </SAPGuiElements>
+  </ScreenData>
+  <ScreenData>
+    <SystemName>U26</SystemName>
+    <Transaction>VA01</Transaction>
+    <ScreenNumber>4001</ScreenNumber>
+    <Program>SAPMV45A</Program>
+    <ActiveWindow>Create Credit request: Overview</ActiveWindow>
+    <SAPGuiElements>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/mbar/menu[2]/menu[1]/menu[14]/menu[1]</Id>
+        <Name>Additional data B</Name>
+        <Type>GuiMenu</Type>
+        <Action>InvokeMethod</Action>
+        <ActionName>Select</ActionName>
+      </SAPGuiElement>
+    </SAPGuiElements>
+  </ScreenData>
+  <ScreenData>
+    <SystemName>U26</SystemName>
+    <Transaction>VA01</Transaction>
+    <ScreenNumber>4002</ScreenNumber>
+    <Program>SAPMV45A</Program>
+    <ActiveWindow>Create Credit request: Header Data</ActiveWindow>
+    <SAPGuiElements>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/usr/tabsTAXI_TABSTRIP_HEAD/tabpT\13/ssubSUBSCREEN_BODY:SAPMV45A:4312/ssub8309:SAPMV45A:8309/ctxtVBAK-ZZCNFGCHK</Id>
+        <Name>VBAK-ZZCNFGCHK</Name>
+        <Type>GuiCTextField</Type>
+        <Action>SetProperty</Action>
+        <ActionName>Text</ActionName>
+        <ActionValues>
+          <anyType xsi:type="xsd:string">X</anyType>
+        </ActionValues>
+      </SAPGuiElement>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/usr/tabsTAXI_TABSTRIP_HEAD/tabpT\13/ssubSUBSCREEN_BODY:SAPMV45A:4312/ssub8309:SAPMV45A:8309/txtVBAK-ZZCUSTBASE</Id>
+        <Name>VBAK-ZZCUSTBASE</Name>
+        <Type>GuiTextField</Type>
+        <Action>SetProperty</Action>
+        <ActionName>Text</ActionName>
+        <ActionValues>
+          <anyType xsi:type="xsd:string">L80014115</anyType>
+        </ActionValues>
+      </SAPGuiElement>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/mbar/menu[2]/menu[4]</Id>
+        <Name>Back</Name>
+        <Type>GuiMenu</Type>
+        <Action>InvokeMethod</Action>
+        <ActionName>Select</ActionName>
+      </SAPGuiElement>
+    </SAPGuiElements>
+  </ScreenData>
+  <ScreenData>
+    <SystemName>U26</SystemName>
+    <Transaction>VA01</Transaction>
+    <ScreenNumber>4001</ScreenNumber>
+    <Program>SAPMV45A</Program>
+    <ActiveWindow>Create Credit request: Overview</ActiveWindow>
+    <SAPGuiElements>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/mbar/menu[2]/menu[1]/menu[10]</Id>
+        <Name>Texts</Name>
+        <Type>GuiMenu</Type>
+        <Action>InvokeMethod</Action>
+        <ActionName>Select</ActionName>
+      </SAPGuiElement>
+    </SAPGuiElements>
+  </ScreenData>
+  <ScreenData>
+    <SystemName>U26</SystemName>
+    <Transaction>VA01</Transaction>
+    <ScreenNumber>4002</ScreenNumber>
+    <Program>SAPMV45A</Program>
+    <ActiveWindow>Create Credit request: Header Data</ActiveWindow>
+    <SAPGuiElements>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/usr/tabsTAXI_TABSTRIP_HEAD/tabpT\09/ssubSUBSCREEN_BODY:SAPMV45A:4152/subSUBSCREEN_TEXT:SAPLV70T:2100/cntlSPLITTER_CONTAINER/shellcont/shellcont/shell/shellcont[0]/shell</Id>
+        <Name>shell</Name>
+        <Type>GuiShell</Type>
+        <Action>InvokeMethod</Action>
+        <ActionName>SelectItem</ActionName>
+        <ActionValues>
+          <anyType xsi:type="xsd:string">Z157</anyType>
+          <anyType xsi:type="xsd:string">Column1</anyType>
+        </ActionValues>
+      </SAPGuiElement>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/usr/tabsTAXI_TABSTRIP_HEAD/tabpT\09/ssubSUBSCREEN_BODY:SAPMV45A:4152/subSUBSCREEN_TEXT:SAPLV70T:2100/cntlSPLITTER_CONTAINER/shellcont/shellcont/shell/shellcont[0]/shell</Id>
+        <Name>shell</Name>
+        <Type>GuiShell</Type>
+        <Action>InvokeMethod</Action>
+        <ActionName>EnsureVisibleHorizontalItem</ActionName>
+        <ActionValues>
+          <anyType xsi:type="xsd:string">Z157</anyType>
+          <anyType xsi:type="xsd:string">Column1</anyType>
+        </ActionValues>
+      </SAPGuiElement>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/usr/tabsTAXI_TABSTRIP_HEAD/tabpT\09/ssubSUBSCREEN_BODY:SAPMV45A:4152/subSUBSCREEN_TEXT:SAPLV70T:2100/cntlSPLITTER_CONTAINER/shellcont/shellcont/shell/shellcont[0]/shell</Id>
+        <Name>shell</Name>
+        <Type>GuiShell</Type>
+        <Action>InvokeMethod</Action>
+        <ActionName>DoubleClickItem</ActionName>
+        <ActionValues>
+          <anyType xsi:type="xsd:string">Z157</anyType>
+          <anyType xsi:type="xsd:string">Column1</anyType>
+        </ActionValues>
+      </SAPGuiElement>
+    </SAPGuiElements>
+  </ScreenData>
+  <ScreenData>
+    <SystemName>U26</SystemName>
+    <Transaction>VA01</Transaction>
+    <ScreenNumber>4002</ScreenNumber>
+    <Program>SAPMV45A</Program>
+    <ActiveWindow>Create Credit request: Header Data</ActiveWindow>
+    <SAPGuiElements>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/usr/tabsTAXI_TABSTRIP_HEAD/tabpT\09/ssubSUBSCREEN_BODY:SAPMV45A:4152/subSUBSCREEN_TEXT:SAPLV70T:2100/cntlSPLITTER_CONTAINER/shellcont/shellcont/shell/shellcont[1]/shell</Id>
+        <Name>shell</Name>
+        <Type>GuiShell</Type>
+        <Action>SetProperty</Action>
+        <ActionName>Text</ActionName>
+        <ActionValues>
+          <anyType xsi:type="xsd:string">Comment123123</anyType>
+        </ActionValues>
+      </SAPGuiElement>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/usr/tabsTAXI_TABSTRIP_HEAD/tabpT\09/ssubSUBSCREEN_BODY:SAPMV45A:4152/subSUBSCREEN_TEXT:SAPLV70T:2100/cntlSPLITTER_CONTAINER/shellcont/shellcont/shell/shellcont[0]/shell</Id>
+        <Name>shell</Name>
+        <Type>GuiShell</Type>
+        <Action>InvokeMethod</Action>
+        <ActionName>SelectItem</ActionName>
+        <ActionValues>
+          <anyType xsi:type="xsd:string">Z200</anyType>
+          <anyType xsi:type="xsd:string">Column2</anyType>
+        </ActionValues>
+      </SAPGuiElement>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/usr/tabsTAXI_TABSTRIP_HEAD/tabpT\09/ssubSUBSCREEN_BODY:SAPMV45A:4152/subSUBSCREEN_TEXT:SAPLV70T:2100/cntlSPLITTER_CONTAINER/shellcont/shellcont/shell/shellcont[0]/shell</Id>
+        <Name>shell</Name>
+        <Type>GuiShell</Type>
+        <Action>InvokeMethod</Action>
+        <ActionName>EnsureVisibleHorizontalItem</ActionName>
+        <ActionValues>
+          <anyType xsi:type="xsd:string">Z200</anyType>
+          <anyType xsi:type="xsd:string">Column2</anyType>
+        </ActionValues>
+      </SAPGuiElement>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/mbar/menu[2]/menu[4]</Id>
+        <Name>Back</Name>
+        <Type>GuiMenu</Type>
+        <Action>InvokeMethod</Action>
+        <ActionName>Select</ActionName>
+      </SAPGuiElement>
+    </SAPGuiElements>
+  </ScreenData>
+  <ScreenData>
+    <SystemName>U26</SystemName>
+    <Transaction>VA01</Transaction>
+    <ScreenNumber>4001</ScreenNumber>
+    <Program>SAPMV45A</Program>
+    <ActiveWindow>Create Credit request: Overview</ActiveWindow>
+    <SAPGuiElements>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/tbar[0]/btn[11]</Id>
+        <Name>btn[11]</Name>
+        <Type>GuiButton</Type>
+        <Action>InvokeMethod</Action>
+        <ActionName>Press</ActionName>
+      </SAPGuiElement>
+    </SAPGuiElements>
+  </ScreenData>
+  <ScreenData>
+    <SystemName>U26</SystemName>
+    <Transaction>VA01</Transaction>
+    <ScreenNumber>10</ScreenNumber>
+    <Program>SAPMSDYP</Program>
+    <ActiveWindow>Information</ActiveWindow>
+    <SAPGuiElements>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[1]/tbar[0]/btn[0]</Id>
+        <Name>btn[0]</Name>
+        <Type>GuiButton</Type>
+        <Action>InvokeMethod</Action>
+        <ActionName>Press</ActionName>
+      </SAPGuiElement>
+    </SAPGuiElements>
+  </ScreenData>
+  <ScreenData>
+    <SystemName>U26</SystemName>
+    <Transaction>VA01</Transaction>
+    <ScreenNumber>101</ScreenNumber>
+    <Program>SAPLSPO2</Program>
+    <ActiveWindow>Save Incomplete Document</ActiveWindow>
+    <SAPGuiElements>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[1]/usr/btnSPOP-VAROPTION2</Id>
+        <Name>SPOP-VAROPTION2</Name>
+        <Type>GuiButton</Type>
+        <Action>InvokeMethod</Action>
+        <ActionName>Press</ActionName>
+      </SAPGuiElement>
+    </SAPGuiElements>
+  </ScreenData>
+  <ScreenData>
+    <SystemName>U26</SystemName>
+    <Transaction>VA01</Transaction>
+    <ScreenNumber>500</ScreenNumber>
+    <Program>SAPLSLVC_FULLSCREEN</Program>
+    <ActiveWindow>Create Credit request: Incompletion Log</ActiveWindow>
+    <SAPGuiElements>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/usr/cntlGRID1/shellcont/shell/shellcont[1]/shell</Id>
+        <Name>shell</Name>
+        <Type>GuiShell</Type>
+        <Action>InvokeMethod</Action>
+        <ActionName>SelectColumn</ActionName>
+        <ActionValues>
+          <anyType xsi:type="xsd:string">ANZEIGEPOS</anyType>
+        </ActionValues>
+      </SAPGuiElement>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/usr/cntlGRID1/shellcont/shell/shellcont[1]/shell</Id>
+        <Name>shell</Name>
+        <Type>GuiShell</Type>
+        <Action>InvokeMethod</Action>
+        <ActionName>SelectColumn</ActionName>
+        <ActionValues>
+          <anyType xsi:type="xsd:string">AUSGABETEXT</anyType>
+        </ActionValues>
+      </SAPGuiElement>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/usr/cntlGRID1/shellcont/shell/shellcont[1]/shell</Id>
+        <Name>shell</Name>
+        <Type>GuiShell</Type>
+        <Action>InvokeMethod</Action>
+        <ActionName>SelectColumn</ActionName>
+        <ActionValues>
+          <anyType xsi:type="xsd:string">FELD</anyType>
+        </ActionValues>
+      </SAPGuiElement>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/usr/cntlGRID1/shellcont/shell/shellcont[1]/shell</Id>
+        <Name>shell</Name>
+        <Type>GuiShell</Type>
+        <Action>SetProperty</Action>
+        <ActionName>SelectedRows</ActionName>
+        <ActionValues>
+          <anyType xsi:type="xsd:string">0</anyType>
+        </ActionValues>
+      </SAPGuiElement>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/mbar/menu[2]/menu[0]</Id>
+        <Name>Back</Name>
+        <Type>GuiMenu</Type>
+        <Action>InvokeMethod</Action>
+        <ActionName>Select</ActionName>
+      </SAPGuiElement>
+    </SAPGuiElements>
+  </ScreenData>
+  <ScreenData>
+    <SystemName>U26</SystemName>
+    <Transaction>VA01</Transaction>
+    <ScreenNumber>4001</ScreenNumber>
+    <Program>SAPMV45A</Program>
+    <ActiveWindow>Create Credit request: Overview</ActiveWindow>
+    <SAPGuiElements>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[0]/tbar[0]/btn[11]</Id>
+        <Name>btn[11]</Name>
+        <Type>GuiButton</Type>
+        <Action>InvokeMethod</Action>
+        <ActionName>Press</ActionName>
+      </SAPGuiElement>
+    </SAPGuiElements>
+  </ScreenData>
+  <ScreenData>
+    <SystemName>U26</SystemName>
+    <Transaction>VA01</Transaction>
+    <ScreenNumber>10</ScreenNumber>
+    <Program>SAPMSDYP</Program>
+    <ActiveWindow>Information</ActiveWindow>
+    <SAPGuiElements>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[1]/tbar[0]/btn[0]</Id>
+        <Name>btn[0]</Name>
+        <Type>GuiButton</Type>
+        <Action>InvokeMethod</Action>
+        <ActionName>Press</ActionName>
+      </SAPGuiElement>
+    </SAPGuiElements>
+  </ScreenData>
+  <ScreenData>
+    <SystemName>U26</SystemName>
+    <Transaction>VA01</Transaction>
+    <ScreenNumber>101</ScreenNumber>
+    <Program>SAPLSPO2</Program>
+    <ActiveWindow>Save Incomplete Document</ActiveWindow>
+    <SAPGuiElements>
+      <SAPGuiElement>
+        <Id>/app/con[0]/ses[0]/wnd[1]/usr/btnSPOP-VAROPTION1</Id>
+        <Name>SPOP-VAROPTION1</Name>
+        <Type>GuiButton</Type>
+        <Action>InvokeMethod</Action>
+        <ActionName>Press</ActionName>
+      </SAPGuiElement>
+    </SAPGuiElements>
+  </ScreenData>
+</ArrayOfScreenData>

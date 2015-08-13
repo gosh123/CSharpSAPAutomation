@@ -5,13 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 using SAPFEWSELib;
 using SAPAutomation;
-using SAPAutomation.Extension;
+using SAPAutomation.Framework;
+//using SAPAutomation.Extension;
 using SAPAutomation.Framework.Attributes;
-using SAPAutomation.Data;
+//using SAPAutomation.Data;
 namespace Driver
 {
-    public class SC_101 //va01 initial
+    [TableBinding("Sheet1","Id")]
+    public class SC_101:SAPGuiScreen //va01 initial
     {
+        [ColumnBinding("Order",0)]
         //va01 repository
         public string OrderType
         {

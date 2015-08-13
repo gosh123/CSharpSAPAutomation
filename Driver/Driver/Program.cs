@@ -4,11 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SAPAutomation;
-using SAPAutomation.Extension;
+//using SAPAutomation.Extension;
 using SAPFEWSELib;
 using System.Data;
 using SAPAutomation.Framework.Attributes;
-using SAPAutomation.Data;
+using System.Xml;
+using System.Xml.Serialization;
+//using SAPAutomation.Data;
 namespace Driver
 {
     static class test001
@@ -34,6 +36,7 @@ namespace Driver
         static void Main(string[] args)
         {
             SAPTestHelper.Current.SetSession();
+            SAPTestHelper.Current.TurnScreenLog(true);
             //string strCellValue = "";
             //SAPTestHelper.Current.SetSession();
             ////strCellValue = SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiUserArea>("usr").FindByName<GuiCustomControl>("GRID1").FindByName<GuiContainerShell>("shellcont").FindByName<GuiGridView>("shell").GetCellValue(1, "From");            
@@ -55,7 +58,7 @@ namespace Driver
             //List<Reporter.OutputData> outputdata = new List<Reporter.OutputData>();
             reporter.initialize("VA01Test");
             
-
+            
             //initialize Test 
             SAPBasis mySAPBasis = new SAPBasis();
             VA01 myScript = new VA01();
@@ -121,7 +124,9 @@ namespace Driver
 
             
             //SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiTree>("shellcont[0]/shell").SelectItem("Z157", "Column1");
-            
+
+            XmlSerializer xs = new XmlSerializer(typeof(List<ScreenData>));
+            xs.Serialize(new System.IO.FileStream("screen.xml", System.IO.FileMode.CreateNew),SAPTestHelper.Current.ScreenDatas.ToList());
 
         }
     }
