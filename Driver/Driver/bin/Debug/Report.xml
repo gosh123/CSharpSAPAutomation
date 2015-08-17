@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<ReportRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Summary>
+    <TestName>VA01Test</TestName>
+    <TotalSteps>0</TotalSteps>
+    <RunTime>0</RunTime>
+    <TestStartTime>2015-08-14T14:06:38.7900925+08:00</TestStartTime>
+    <TestEndTime>0001-01-01T00:00:00</TestEndTime>
+  </Summary>
+  <Detail>
+    <TestStep Name="VA01_CreateSalesOrder">
+      <CaseName>VA01_CreateSalesOrder</CaseName>
+      <Number>1</Number>
+      <BoxName>VA01</BoxName>
+      <CaseStatus>Pass</CaseStatus>
+      <InputDatas>
+        <TestData>
+          <FieldName>Test</FieldName>
+          <FieldValue>Test001</FieldValue>
+        </TestData>
+        <TestData>
+          <FieldName>abc</FieldName>
+          <FieldValue>TESTABC</FieldValue>
+        </TestData>
+      </InputDatas>
+      <OutputDatas />
+      <CheckPoints />
+    </TestStep>
+    <TestStep Name="VA01_CreateSalesOrder">
+      <CaseName>VA01_CreateSalesOrder</CaseName>
+      <Number>1</Number>
+      <BoxName>VA01</BoxName>
+      <CaseStatus>Pass</CaseStatus>
+      <InputDatas>
+        <TestData>
+          <FieldName>Test</FieldName>
+          <FieldValue>Test001</FieldValue>
+        </TestData>
+        <TestData>
+          <FieldName>abc</FieldName>
+          <FieldValue>TESTABC</FieldValue>
+        </TestData>
+      </InputDatas>
+      <OutputDatas />
+      <CheckPoints />
+    </TestStep>
+  </Detail>
+</ReportRoot>

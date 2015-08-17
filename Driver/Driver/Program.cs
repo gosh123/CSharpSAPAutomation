@@ -32,9 +32,33 @@ namespace Driver
     }
     class Program
     {
-           
+        static void ReportDeSerializeTest()
+        {
+            Driver.Report.SAPReport report = Driver.Report.SAPReport.Restore("Report.xml");
+        }
+
+        static void ReportSerializeTest()
+        {
+            
+
+            Driver.Report.SAPReport report = new Report.SAPReport();
+            report.TurnAutoSave(true);
+            report.Summary.TestName = "VA01Test";
+            Driver.Report.TestStep step = new Report.TestStep();
+            step.CaseName = "VA01_CreateSalesOrder";
+            step.BoxName = "VA01";
+            step.Name = "VA01_CreateSalesOrder";
+            step.Number = 1;
+            step.Status = "Pass";
+            step.InputDatas.Add(new Report.TestData() { FieldName = "Test", FieldValue = "Test001" });
+            report.Detail.Add(step);
+            step.InputDatas.Add(new Report.TestData() { FieldName = "abc", FieldValue = "TESTABC" });
+            report.Detail.Add(step);
+            
+        }
         static void Main(string[] args)
         {
+            ReportSerializeTest();
             SAPTestHelper.Current.SetSession();
             SAPTestHelper.Current.TurnScreenLog(true);
             //string strCellValue = "";

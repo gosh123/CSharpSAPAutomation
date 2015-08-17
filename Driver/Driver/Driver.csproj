@@ -51,6 +51,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reporter\Reporter.cs" />
+    <Compile Include="Report\CheckPoint.cs" />
+    <Compile Include="Report\EventList.cs" />
+    <Compile Include="Report\SAPReport.cs" />
+    <Compile Include="Report\Summary.cs" />
+    <Compile Include="Report\TestData.cs" />
+    <Compile Include="Report\TestStep.cs" />
     <Compile Include="SAPBasis.cs" />
     <Compile Include="Reprository\SD.cs" />
   </ItemGroup>
