@@ -14,7 +14,7 @@ namespace Driver
             var mySAPBasis = new SAPBasis();            
             // Create Sales Doc Initial
             mySAPBasis.StartTransction("VA01");
-            myScreen.DataBindingV2();             
+            myScreen.DataBindingV2();                       
             //myScreen.OrderType = "ZCR";
             //myScreen.SalesOrg = "L8";
             //myScreen.DistributionChannel = "ZZ";

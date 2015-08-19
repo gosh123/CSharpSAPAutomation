@@ -34,7 +34,7 @@ namespace Driver
             
         }
     }
-    class Program
+    public class Program
     {
         static void ReportDeSerializeTest()
         {
