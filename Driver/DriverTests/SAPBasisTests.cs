@@ -54,21 +54,26 @@ namespace Driver.Tests
            
             var mySAPBasis = new SAPBasis();
             mySAPBasis.SetCurrentSession();
-            string DocNo=mySAPBasis.statusBarGetDocNo();
+
+            string DocNo=mySAPBasis.statusBarGetDocNo();            
             //string status = "Credit request 7514158818 has been saved";
             //Regex status = new Regex(status);
-            Regex re = new Regex("[0-9]");
-            re.Match(DocNo);
+            Regex re = new Regex("[0-9]");            
+            Boolean match =  re.IsMatch(DocNo);
             //string DocNo=re.Replace(status, "");
 
             //Console.Write(status);
             //Console.Read();
-            Assert.AreNotEqual(DocNo, "");
+            if (!match)
+            {
+                Assert.Fail();
+            }
+            
             //if (re.Match(DocNo))
             //{
             
             //}
         }
-       
+           
     }
 }

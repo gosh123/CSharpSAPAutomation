@@ -6,3 +6,4 @@ C:\Git\CSharpSAPAutomation\Driver\DriverTests\bin\Debug\Driver.pdb
 C:\Git\CSharpSAPAutomation\Driver\DriverTests\obj\Debug\DriverTests.csprojResolveAssemblyReference.cache
 C:\Git\CSharpSAPAutomation\Driver\DriverTests\obj\Debug\DriverTests.dll
 C:\Git\CSharpSAPAutomation\Driver\DriverTests\obj\Debug\DriverTests.pdb
+C:\Git\CSharpSAPAutomation\Driver\DriverTests\bin\Debug\Young.Data.dll

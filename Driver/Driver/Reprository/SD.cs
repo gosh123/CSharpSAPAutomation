@@ -14,7 +14,7 @@ namespace Driver
     [TableBinding("Sheet1","Id")]
     public class SC_101:SAPGuiScreen //va01 initial
     {
-        [ColumnBinding("Order",0)]
+        [ColumnBinding("OrderType",0)]
         //va01 repository
         public string OrderType
         {
@@ -32,7 +32,7 @@ namespace Driver
                 //SAPTestHelper.Current.GetElementById<GuiCTextField>("wnd[0]/usr/VBAK-AUART").Text = value;
             }
         }
-
+        [ColumnBinding("SalesOrg", 1)]
         public string SalesOrg
         { 
             get
@@ -41,11 +41,13 @@ namespace Driver
             }
             set
             {
+                
                 var reporter = new Reporter.Reporter();
                 reporter.updateinputdata("SalesOrg", value);
                 SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiUserArea>("usr").FindByName<GuiCTextField>("VBAK-VKORG").Text = value;
             }
         }
+        [ColumnBinding("DistributionChannel", 2)]
         public string DistributionChannel 
         {
             get
@@ -59,6 +61,7 @@ namespace Driver
                 SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiUserArea>("usr").FindByName<GuiCTextField>("VBAK-VTWEG").Text = value;
             }
         }
+        [ColumnBinding("Division", 3)]
         public string Division
         {
             get
@@ -81,8 +84,10 @@ namespace Driver
        
 
     }
-    public class SC_4001//va01 create sales order overview
+    [TableBinding("Sheet1", "Id")]
+    public class SC_4001:SAPGuiScreen//va01 create sales order overview
     {
+        [ColumnBinding("SoldToParty", 0)]
         public string SoldToParty
         {
             get
@@ -96,6 +101,7 @@ namespace Driver
                 SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiUserArea>("usr").FindByName<GuiSimpleContainer>("SUBSCREEN_HEADER:SAPMV45A:4021").FindByName<GuiSimpleContainer>("PART-SUB:SAPMV45A:4701").FindByName<GuiCTextField>("KUAGV-KUNNR").Text=value;
             }
         }
+        [ColumnBinding("ShipToParty", 1)]
         public string ShipToParty
         {
             get
@@ -109,6 +115,7 @@ namespace Driver
                 SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiUserArea>("usr").FindByName<GuiSimpleContainer>("SUBSCREEN_HEADER:SAPMV45A:4021").FindByName<GuiSimpleContainer>("PART-SUB:SAPMV45A:4701").FindByName<GuiCTextField>("KUWEV-KUNNR").Text = value;
             }
         }
+        [ColumnBinding("PONo", 2)]
         public string PONo
         {
             get
@@ -122,6 +129,7 @@ namespace Driver
                 SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiUserArea>("usr").FindByName<GuiSimpleContainer>("SUBSCREEN_HEADER:SAPMV45A:4021").FindByName<GuiTextField>("VBKD-BSTKD").Text = value;
             }
         }
+        [ColumnBinding("PODate", 3)]
         public string PODate
         {
             get
@@ -135,6 +143,7 @@ namespace Driver
                 SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiUserArea>("usr").FindByName<GuiSimpleContainer>("SUBSCREEN_HEADER:SAPMV45A:4021").FindByName<GuiCTextField>("VBKD-BSTDK").Text = value;
             }
         }
+        [ColumnBinding("HPReceiveDate", 4)]
         public string HPReceiveDate
         {
             get
@@ -147,10 +156,36 @@ namespace Driver
                 reporter.updateinputdata("HPReceiveDate", value);
                 SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiUserArea>("usr").FindByName<GuiSimpleContainer>("SUBSCREEN_HEADER:SAPMV45A:4021").FindByName<GuiCTextField>("VBAK-ZZHPRECDT").Text = value;
             }
-        }                        
+        }
+        [ColumnBinding("Material", 5)]
+        public string Material
+        {
+            get
+            {
+                return SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiTableControl>("SAPMV45ATCTRL_U_ERF_GUTLAST").GetCell(0, 1).Text;
+            }
+            set
+            {
+                SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiTableControl>("SAPMV45ATCTRL_U_ERF_GUTLAST").GetCell(0, 1).Text = value;
+            }
+        }
+        [ColumnBinding("OrderQuantity", 6)]
+        public string OrderQuantity
+        {
+            get
+            {
+                return SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiTableControl>("SAPMV45ATCTRL_U_ERF_GUTLAST").GetCell(0, 4).Text;
+            }
+            set
+            {
+                SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiTableControl>("SAPMV45ATCTRL_U_ERF_GUTLAST").GetCell(0, 4).Text = value;
+            }
+        }
     }
-    public class SC_4002//va01 create sales order goto;header;sales
+    [TableBinding("Sheet1", "Id")]
+    public class SC_4002:SAPGuiScreen//va01 create sales order goto;header;sales
     {
+        [ColumnBinding("OrderReason",0)]
         public string OrderReason
         {
             get
@@ -164,6 +199,7 @@ namespace Driver
                 SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiComboBox>("VBAK-AUGRU").Key = value;
             }
         }
+        [ColumnBinding("ConfigCheck", 1)]
         public string ConfigCheck
         {
             get
@@ -178,6 +214,7 @@ namespace Driver
             }
         
         }
+        [ColumnBinding("CustBaseNo", 2)]
         public string CustBaseNo
         {
             get
@@ -191,6 +228,7 @@ namespace Driver
                 SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiTextField>("VBAK-ZZCUSTBASE").Text = value;
             }
         }
+        [ColumnBinding("HeaderText", 3)]
         public string HeaderText
         {
             get
