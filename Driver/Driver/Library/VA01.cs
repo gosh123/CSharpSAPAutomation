@@ -42,16 +42,17 @@ namespace Driver
             mySAPBasis.PressEnter();
             //error handling
             mySAPBasis.statusBarHandling();
-
+            //
+            
             //mySAPBasis.SAPTableInputValue()
         }
         public void CreateSalesOrder_Header_Sales()
         {
-            var myScreen = new SC_4002();
+            var myScreen = new SC_4002_Sales();
             var mySAPBasis = new SAPBasis();
             myScreen.DataBindingV2();
             //change order reason
-            //myScreen.OrderReason = "105";
+            //myScreen.OrderReason = "C02";
             //Press enter
             mySAPBasis.PressEnter();
             //error handling
@@ -59,14 +60,14 @@ namespace Driver
         }
         public void CreateSalesOrder_Header_AdditionalB()
         {
-            var myScreen = new SC_4002();
+            var myScreen = new SC_4002_AdditionalDataB();
             myScreen.DataBindingV2();
             //myScreen.ConfigCheck = "X";
             //myScreen.CustBaseNo = "L80014115";
         }
         public void CreateSalesOrder_Header_Texts()
         {
-            var myScreen = new SC_4002();
+            var myScreen = new SC_4002_HeaderText();
             var mySAPBasis = new SAPBasis();
             
             mySAPBasis.TreeActive("wnd[0]/usr/tabsTAXI_TABSTRIP_HEAD/tabpT\\09/ssubSUBSCREEN_BODY:SAPMV45A:4152/subSUBSCREEN_TEXT:SAPLV70T:2100/cntlSPLITTER_CONTAINER/shellcont/shellcont/shell/shellcont[0]/shell", "Z157", "Column1");

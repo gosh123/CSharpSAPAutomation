@@ -45,7 +45,11 @@ namespace Driver
             {
                 PressEnter();
                 intRepeat++;
-            }            
+            }
+            if (SAPTestHelper.Current.SAPGuiSession.FindById<GuiButton>("wnd[0]/tbar[1]/btn[8]") != null)
+            {
+                SAPTestHelper.Current.SAPGuiSession.FindById<GuiButton>("wnd[0]/tbar[1]/btn[8]").Press();
+            }
         }
         public string statusBarGetDocNo()
         {

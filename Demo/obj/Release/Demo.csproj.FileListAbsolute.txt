@@ -1,0 +1,9 @@
+C:\Users\yanzhou\Documents\GitHub\SAPGuiAutomationLib\Demo\bin\Release\Demo.exe
+C:\Users\yanzhou\Documents\GitHub\SAPGuiAutomationLib\Demo\bin\Release\Demo.pdb
+C:\Users\yanzhou\Documents\GitHub\SAPGuiAutomationLib\Demo\bin\Release\SAPAutoLogon.dll
+C:\Users\yanzhou\Documents\GitHub\SAPGuiAutomationLib\Demo\bin\Release\SAPAutomation.dll
+C:\Users\yanzhou\Documents\GitHub\SAPGuiAutomationLib\Demo\bin\Release\SAPAutoLogon.pdb
+C:\Users\yanzhou\Documents\GitHub\SAPGuiAutomationLib\Demo\obj\Release\Demo.exe
+C:\Users\yanzhou\Documents\GitHub\SAPGuiAutomationLib\Demo\obj\Release\Demo.pdb
+C:\Users\yanzhou\Documents\GitHub\SAPGuiAutomationLib\Demo\bin\Release\SAPAutomation.pdb
+C:\Users\yanzhou\Documents\GitHub\SAPGuiAutomationLib\Demo\obj\Release\Demo.csprojResolveAssemblyReference.cache

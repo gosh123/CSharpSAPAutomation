@@ -183,9 +183,9 @@ namespace Driver
         }
     }
     [TableBinding("Sheet1", "Id")]
-    public class SC_4002:SAPGuiScreen//va01 create sales order goto;header;sales
+    public class SC_4002_Sales:SAPGuiScreen//va01 create sales order goto;header;sales
     {
-        [ColumnBinding("OrderReason",0)]
+        [ColumnBinding("OrderReason", 0)]
         public string OrderReason
         {
             get
@@ -199,7 +199,11 @@ namespace Driver
                 SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiComboBox>("VBAK-AUGRU").Key = value;
             }
         }
-        [ColumnBinding("ConfigCheck", 1)]
+    }
+     [TableBinding("Sheet1", "Id")]
+    public class SC_4002_AdditionalDataB:SAPGuiScreen//va01 create sales order goto;header;sales
+    {
+        [ColumnBinding("ConfigCheck", 0)]
         public string ConfigCheck
         {
             get
@@ -212,9 +216,9 @@ namespace Driver
                 reporter.updateinputdata("ConfigCheck", value);
                 SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiCTextField>("VBAK-ZZCNFGCHK").Text = value;
             }
-        
+
         }
-        [ColumnBinding("CustBaseNo", 2)]
+        [ColumnBinding("CustBaseNo", 1)]
         public string CustBaseNo
         {
             get
@@ -228,7 +232,13 @@ namespace Driver
                 SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").FindByName<GuiTextField>("VBAK-ZZCUSTBASE").Text = value;
             }
         }
-        [ColumnBinding("HeaderText", 3)]
+    }
+    [TableBinding("Sheet1", "Id")]
+    public class SC_4002_HeaderText:SAPGuiScreen//va01 create sales order goto;header;sales
+    {
+        
+        
+        [ColumnBinding("HeaderText", 0)]
         public string HeaderText
         {
             get

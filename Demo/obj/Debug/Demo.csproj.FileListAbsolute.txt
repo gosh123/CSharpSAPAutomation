@@ -1,0 +1,12 @@
+C:\Users\yanzhou\Documents\GitHub\SAPGuiAutomationLib\Demo\bin\Debug\Demo.exe
+C:\Users\yanzhou\Documents\GitHub\SAPGuiAutomationLib\Demo\bin\Debug\Demo.pdb
+C:\Users\yanzhou\Documents\GitHub\SAPGuiAutomationLib\Demo\obj\Debug\Demo.csprojResolveAssemblyReference.cache
+C:\Users\yanzhou\Documents\GitHub\SAPGuiAutomationLib\Demo\obj\Debug\Demo.exe
+C:\Users\yanzhou\Documents\GitHub\SAPGuiAutomationLib\Demo\obj\Debug\Demo.pdb
+C:\Users\yanzhou\Documents\GitHub\SAPGuiAutomationLib\Demo\bin\Debug\SAPAutomation.dll
+C:\Users\yanzhou\Documents\GitHub\SAPGuiAutomationLib\Demo\bin\Debug\SAPAutomation.pdb
+C:\Users\yanzhou\Documents\GitHub\SAPGuiAutomationLib\Demo\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\yanzhou\Documents\GitHub\SAPGuiAutomationLib\Demo\bin\Debug\Young.Data.pdb
+C:\Users\yanzhou\Documents\GitHub\SAPGuiAutomationLib\Demo\obj\Debug\Interop.SAPFEWSELib.dll
+C:\Users\yanzhou\Documents\GitHub\SAPGuiAutomationLib\Demo\obj\Debug\Demo.csproj.ResolveComReference.cache
+C:\Users\yanzhou\Documents\GitHub\SAPGuiAutomationLib\Demo\bin\Debug\Young.Data.dll

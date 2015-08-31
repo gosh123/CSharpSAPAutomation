@@ -66,9 +66,9 @@ namespace Driver
             //Simple workflow
             //DataTable dt = new DataTable();
             //dt.ReadFromExcel(@"c:\temp\simpleWorkFlow.xlsx", "sheet1");
-            //DataTable<va01_initial> myTest = new DataTable<va01_initial>(dt);            
-            
-            //foreach(var data in myTest)
+            //DataTable<va01_initial> myTest = new DataTable<va01_initial>(dt);
+
+            //foreach (var data in myTest)
             //{
             //    va01_initial.RunAction(data);
             //}
@@ -76,7 +76,7 @@ namespace Driver
             ReportSerializeTest();            
             SAPTestHelper.Current.TurnScreenLog(true);
             Global.DataSet = ExcelHelper.Current.Open(@"C:\temp\Test.xlsx").ReadAll();
-            Global.CurrentId = 0;            
+            Global.CurrentId = 1;            
             //initialize report
             Reporter.Reporter reporter = new Reporter.Reporter();            
             reporter.initialize("VA01Test");
@@ -87,8 +87,11 @@ namespace Driver
             mySD.VA01_CreateSalesOrder("CreateSO_Initial");            
             mySD.VA01_CreateSalesOrder("CreateSO_Overview");
             mySD.VA01_CreateSalesOrder("Create_Header_Sales");
+            mySD.VA01_CreateSalesOrder("CreateSO_Header_AdditionaldataB");
             mySD.VA01_CreateSalesOrder("CreateSO_Header_Texts");            
             mySD.VA01_CreateSalesOrder("CreateSO_Save");
+            string DocNo = mySD.DocNo;            
+            reporter.updateoutputdata("SalesDocNo", DocNo);
             reporter.close();            
 
         }
@@ -130,7 +133,7 @@ namespace Driver
                 SAPTestHelper.Current.SAPGuiSession.FindById<GuiCTextField>("wnd[0]/usr/ctxtVBAK-SPART").Text = Data.Division;
                 SAPTestHelper.Current.SAPGuiSession.FindById<GuiCTextField>("wnd[0]/usr/ctxtVBAK-SPART").SetFocus();
                 SAPTestHelper.Current.SAPGuiSession.FindById<GuiCTextField>("wnd[0]/usr/ctxtVBAK-SPART").CaretPosition = 2;
-                SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").SendVKey(0);
+                SAPTestHelper.Current.SAPGuiSession.FindById<GuiMainWindow>("wnd[0]").SendVKey(0);               
             }
         }
 
